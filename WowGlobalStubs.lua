@@ -1,3 +1,4 @@
+SlashCmdList = {}
 
 function GetCoinTextureString(n)
   return tostring(n)
@@ -104,4 +105,26 @@ end
 
 function UnitIsDeadOrGhost(unit_id)
   return false
+end
+
+function UnitGUID(unit_id)
+  return "Player-71-0BBA3E27"
+end
+
+function UnitFullName(unit_id)
+  return "Airei", "Gorgonnash"
+end
+  
+function UnitClassBase(unit_id)
+  return "DRUID"
+end
+
+function IsInInstance()
+  return false, "none"
+end
+
+function GetAddOnMetadata(addon, field)
+  if (field == "Version") then
+    return "0.1a"
+  end
 end
